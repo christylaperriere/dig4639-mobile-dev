@@ -1,5 +1,5 @@
 function scopeDemo() {
-    console.log(x)
+    //console.log(x)
     let a = 3, b = 4, c = 5;
     console.log(a);
     console.log(b);
@@ -12,7 +12,7 @@ function scopeDemo() {
 
 function runOnLoad()
 {
-    console.log(x);
+    //console.log(x);
     var submitButton = document.getElementById("submitButton");
     submitButton.addEventListener("click",onClick);
     var submitButton = document.getElementById("");
