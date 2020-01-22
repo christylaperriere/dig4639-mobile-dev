@@ -13,3 +13,6 @@ The Position I Am Seeking: I am a web design student at the University of Centra
 of Associate Product Dseigner. I feel that I have a unique skillset that makes me an ideal candidate for this position 
 as I have experieince performing user experience research and implementing data-driven features in the industry.
 
+##Conflicts
+This section represents code on the server that isn't on the local repository.
+
