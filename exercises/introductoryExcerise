@@ -1,0 +1,13 @@
+Settings App on Phone 
+
+Single Feature: Changing background 
+- Gathers photo data from users device 
+- Presents templates for user to choose from 
+- Displays preview of changed state
+- Allows the user to choose where the new wallpaper will appear 
+    - Lock screen/home screen 
+- Can apply the changes to the users device 
+- Can cancel the change and restores original state 
+
+
+Contributors: erinhopkins & sdolbey
