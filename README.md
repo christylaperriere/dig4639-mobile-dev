@@ -18,3 +18,6 @@ as I have experieince performing user experience research and implementing data-
 1. Item 2 
 1. Item 3
 
+## Conflict 
+
+This is a conflict. 
