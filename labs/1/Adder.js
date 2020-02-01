@@ -1,16 +1,19 @@
-//creating a class named Adder
 class Adder {
-    //this.props
+    constructor (numbers) {
+        this.props = numbers;
+    }
+    sum() {
+        // Check if values are undefined
+        if( !this.props.a || !this.props.b ) return null;
 
-    //method sum() which returns the some of the props 
-    //"a" and "b" if they exist 
-    //undefined if "a" and "b" do not exist 
+        //returning sum; 
+        return this.props.a + this.props.b; 
+    }
 
-    //method render()
-    //returning a string that incldues the sum of "a" and "b"
-    //string inside paragraph element 
-    //<p>The sum of 5 and 10 is 15</p>
+    render() {
+        //returning the sum of the two numbers
+        return `<p>The sum of ${this.props.a} and ${this.props.b} is ${this.sum()}</p>`; 
+    }
 }
 
-//exporting information in class Adder
 module.exports = Adder; 
