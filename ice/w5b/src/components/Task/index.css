@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	background-color: #E1EBED;
+	padding: 2em;
+}
+
+h3 {
+	font-size: 2em;
+	font-weight: bold;
+}
+
+#taskText {
+	height: 3em;
+	width: 30em;
+	padding-left: .5em;
+}
+
+.task {
+    background: #f0f5f5;
+    color: #293d3d;
+    padding: 5px;
+    margin-top: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 4px;
+}
+
+#addTask {
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: .75em;
+	padding-bottom: .75em;
+	background-color: #015C6E;
+	color: white;
+	border-radius: .5em;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: .75em;
+}
+
+.task:nth-child(even) {
+	background-color: #015C6E;
+	color: white;
+}
+
+.task:nth-child(odd) {
+	background-color: #7DB3BD;
+}
+
+button {
+	background-color: yellow;
+}

@@ -15,8 +15,11 @@ function runOnLoad()
 
 function onClick() {
     console.log("clicked!");
+    //Fixes issue #86 - user cannot enter empty task
+    if(/\S+/.test(document.getElementById("taskText").value)) {
     var newTask = new Task({content:input.value,done:false});
-    element.appendChild(newTask.render());
+        element.appendChild(newTask.render());
+    }
 }
 
 window.addEventListener("DOMContentLoaded", runOnLoad);
