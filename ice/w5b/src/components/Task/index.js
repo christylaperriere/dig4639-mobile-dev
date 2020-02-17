@@ -2,8 +2,13 @@ import "./index.css"
 
 class Task {
     constructor(props) {
+<<<<<<< HEAD
 
+=======
+        // Stores the argument in this.props
+>>>>>>> fe277fcee38e1b953a813f52fa2d0a9fceacf0f6
         this.props = props;
+        // Creates a new HTML DIV element
         this.element = document.createElement("div");
         let checkbox = document.createElement("input");
         checkbox.type = "checkbox";
@@ -12,7 +17,6 @@ class Task {
         this.onClick = this.onClick.bind(this);
 
         checkbox.addEventListener("change",this.onClick);
-
         this.element.appendChild(checkbox);
       
         let span = document.createElement("span");
@@ -26,6 +30,7 @@ class Task {
 
 
     }
+
     onClick(e) {
         //assignment operator
         var myString = ""
@@ -54,6 +59,7 @@ class Task {
             this.element.style.setProperty("text-decoration", "none");
         }
     }
+
     render() {
         return this.element;
     }
