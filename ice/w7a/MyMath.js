@@ -41,11 +41,14 @@ function DivideBy(a, b) {
 export { DivideBy }; 
 
 // Contains String function 
-function ContainsString() {
-  // Returns true if the first parameter has a substring of the second
-  // parameter
-
-  // Make sure both are strings 
+function ContainsString(first, second) {
+  let result = false 
+  if(typeof first == "string" && typeof second == "string") {
+    if (first.includes(second)) {
+      result = true
+    }
+  }
+  return result 
 }
 
 export { ContainsString }; 

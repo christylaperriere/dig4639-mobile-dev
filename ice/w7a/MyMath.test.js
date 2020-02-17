@@ -46,6 +46,19 @@ describe ("divideBy", () => {
 
 })
 
+// Tests for contains string
+describe ("contains", () => {
+
+  test('returns true', () => {
+    expect(ContainsString("hello", "hell")).toBe(true)
+  })
+
+  test('returns false', () => {
+    expect(ContainsString("hello", 7)).toBe(false)
+  })
+
+})
+
 // Tests for Resort Array
 describe ("sorting", () => {
 
