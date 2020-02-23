@@ -1,17 +1,16 @@
-// Importing css
-import './index.css'
 import React from 'react'
+import './index.css'
 
 // Adding Card component
-class Card {
-  constructor (props) {
+class Card extends React.Component {
+  constructor(props) {
     super(props)
     this.props = props
     this.content = this.props.content
   }
 
   render () {
-    return(
+    return (
       <div className = 'card'>
         {this.content}
       </div>
@@ -19,5 +18,5 @@ class Card {
   }
 }
 
-// Exporting code
+// Exporting card
 export default Card
