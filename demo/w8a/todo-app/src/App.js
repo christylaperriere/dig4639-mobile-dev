@@ -1,39 +1,63 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import './App.css'; 
+import todoList from './toDoList.json'; 
 
-    const toDoList = [
-      {
-        content: 'Task 1', priority: 2, completed: true
-      },
-      {
-        content: 'Task 2', priority: 1, completed: true
-      },
-      {
-        content: 'Task 3', priority: 3, completed: false
-      }
-    ]
+// Filter the list based on a checkbox
+// Add an input form to allow creting TODO items with content and priority
+// Have each item be able to remove itself using a function passed in from the parent 
 
-    function toDoItem(props) {
-      return <p>Item!</p>
+function TodoItem (props) {
+return <p className='card' onClick={() => props.removeTask(props.id)}>{props.content}</p>
+}
+
+class TodoList extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      todoList, 
+      hideCompletedItems: false, 
     }
+    this.currentId = 4; 
+  }
+  addTask(event) {
+    console.log(this.refs.taskcontent)
+    let todoList = this.state.todoList
+    todoList.push(
+      {"id": this.currentId, "completed": true, "priority": 1, "content": this.refs.taskcontent.value})
+    this.currentId++
+    this.setState({todoList:todoList})
+  }
+  removeTask(id) {
+    console.log(id)
+    let todoList = this.state.todoList
+    todoList = todoList.filter((value) => value.id != id)
+    this.setState({todoList})
+  }
+  render() {
+    return (
+      <>
+      <input type = "text" refs="taskContent" /> 
+      <input type = "button" value="Add Task" onClick={(event) => this.addTask(event)} />
+      <br /> 
+      <br />
+      <input ref="hideCompletedItemsCheckbox" type="checkbox" id="hideCompletedItems"
+      name="hideCompletedItems" value="hideCompletedItems"
+      onChange={(event) => this.setState({ hideCompletedItems: event.target.checked})} />
+      <label htmlFor = "hideCompletedItems"> Hide </label><br></br>
+      {
+        ((this.state.hideCompletedItems) ? this.state.todoList
+          .filter((value) => !value.completed) : todoList)
+          .map((value) => <TodoItem id={value.id} removeTask ={(id) => this.removeTask.id} key={value.id} content={value.content}
+            priority={value.priority}
+          completed={value.completed} />)}
+          </>)
+  }
+}
 
-    function App() {
-      // Filtering 
-      toDoListFiltered = toDoList.filter((value) => value.completed)
+function App(props) {
+  return (
+    <TodoList /> 
+  )
+}
 
-      const toDoArray = toDoListFiltered.map(
-        (value) => <toDoItem content = {value.content} />
-      )
-      /*
-      const toDoArray = [
-          <toDoItem content="Item 1"/>,
-          <toDoItem content="Item 2"/>,
-          <toDoItem content="Item 3"/>
-      ]*/
-      return (
-          toDoList.filter((value) => value.completed).map(
-          (value) => <ToDoItem priority={v.priority} content = {value.content} />)
-      )
-    }
-
-export default App;
+export default App; 
