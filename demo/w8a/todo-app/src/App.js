@@ -23,7 +23,7 @@ class TodoList extends React.Component {
     console.log(this.refs.taskcontent)
     let todoList = this.state.todoList
     todoList.push(
-      {"id": this.currentId, "completed": true, "priority": 1, "content": this.refs.taskcontent.value})
+      {"id": this.currentId, "completed": true, "priority": 1, "content": this.refs.taskContent.value})
     this.currentId++
     this.setState({todoList:todoList})
   }
@@ -31,6 +31,7 @@ class TodoList extends React.Component {
     console.log(id)
     let todoList = this.state.todoList
     todoList = todoList.filter((value) => value.id != id)
+    console.log(todoList)
     this.setState({todoList})
   }
   render() {
@@ -46,7 +47,7 @@ class TodoList extends React.Component {
       <label htmlFor = "hideCompletedItems"> Hide </label><br></br>
       {
         ((this.state.hideCompletedItems) ? this.state.todoList
-          .filter((value) => !value.completed) : todoList)
+          .filter((value) => !value.completed) : this.state.todoList)
           .map((value) => <TodoItem id={value.id} removeTask ={(id) => this.removeTask.id} key={value.id} content={value.content}
             priority={value.priority}
           completed={value.completed} />)}
