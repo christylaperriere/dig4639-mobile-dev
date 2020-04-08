@@ -5,7 +5,7 @@ import questions from "./question.json"
 const TIME_LIMIT = 5
 const TITLE_STATE = 0
 const QUESTION_STATE = 1
-const FINAL_STATE = 2 
+const FINAL_STATE = 0
 
 class QuizQuestion extends React.Component {
   render() {
@@ -23,7 +23,7 @@ class QuizQuestion extends React.Component {
       )}
     </View>
     )
-  }
+    }
 }
 class TitlePage extends React.Component {
   constructor(props) {

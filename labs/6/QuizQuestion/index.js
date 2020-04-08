@@ -8,7 +8,7 @@ class QuizQuestion extends React.Component {
         <Text>{this.props.question}</Text>
         {this.props.answers.map((v) => {
           <Button
-            title="Answer Button"
+            title="Submit Button"
             onPress={() => this.props.nextQuestion} 
           >
           </Button>
