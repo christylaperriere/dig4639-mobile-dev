@@ -1,0 +1,112 @@
+[
+  {
+    "question": "By the end of his or her first year, the typical infant ____.", 
+    "possibleAnswers":
+    [
+      {
+        "text": "weighs 20% less due to the loss of baby fat",
+        "correct": "wrong"
+      },
+      {
+        "text": "remains the same weight during the second six months",
+        "correct": "wrong"
+      },
+      {
+        "text": "doubles his or her body weight",
+        "correct": "wrong"
+      },
+      {
+        "text": "triples his or her body weight",
+        "correct": "correct"
+      }
+    ]
+  },
+  {
+    "question": "____ is a tiny gap between neurons", 
+    "possibleAnswers":
+    [
+      {
+        "text": "a neurotransmitter",
+        "correct": "wrong"
+      },
+      {
+        "text": "the synapse",
+        "correct": "correct"
+      },
+      {
+        "text": "a dendrite",
+        "correct": "wrong"
+      },
+      {
+        "text": "myelin",
+        "correct": "wrong"
+      }
+    ]
+  },
+  {
+    "question": "Which of the following are the five primary emotions?", 
+    "possibleAnswers":
+    [
+      {
+        "text": "jealousy, joy, shame, lust and surprise",
+        "correct": "wrong"
+      },
+      {
+        "text": "guilt, joy, envy, embarassment, and happiness",
+        "correct": "wrong"
+      },
+      {
+        "text": "anger, fear, disgust, surprise, and happiness",
+        "correct": "correct"
+      },
+      {
+        "text": "embarassment, surprise, jealousy",
+        "correct": "wrong"
+      }
+    ]
+  },
+  {
+    "question": "____ refers tot he positive or negative response to social interactions.", 
+    "possibleAnswers":
+    [
+      {
+        "text": "attachment",
+        "correct": "wrong"
+      },
+      {
+        "text": "temperament",
+        "correct": "wrong"
+      },
+      {
+        "text": "sociability",
+        "correct": "correct"
+      },
+      {
+        "text": "social smile",
+        "correct": "wrong"
+      }
+    ]
+  },
+  {
+    "question": "What are the soft spots on a neonate called?", 
+    "possibleAnswers":
+    [
+      {
+        "text": "fontanels",
+        "correct": "correct"
+      },
+      {
+        "text": "sutures",
+        "correct": "wrong"
+      },
+      {
+        "text": "cranium areas",
+        "correct": "wrong"
+      },
+      {
+        "text": "soft spots",
+        "correct": "wrong"
+      }
+    ]
+  }
+]
